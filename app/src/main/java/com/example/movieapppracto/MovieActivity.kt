@@ -23,7 +23,6 @@ class MovieActivity : AppCompatActivity() {
         val details=bundle.getString("movieDetails")
 
 
-
         movieName.text=heading
         movieImage.setImageResource(imageId);
         movieDetails.text=details

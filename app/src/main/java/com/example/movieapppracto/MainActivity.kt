@@ -16,7 +16,8 @@ class MainActivity : AppCompatActivity()
     lateinit var description:Array<String>
 
 
-    override fun onCreate(savedInstanceState: Bundle?) {
+    override fun onCreate(savedInstanceState: Bundle?)
+    {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
@@ -81,11 +82,6 @@ class MainActivity : AppCompatActivity()
                  intent.putExtra("movieDetails",newArrayList[position].description);
 
                  startActivity(intent);
-
-
-
-
-
 
             }
 

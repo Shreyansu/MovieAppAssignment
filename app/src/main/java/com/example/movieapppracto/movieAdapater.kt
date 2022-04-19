@@ -29,7 +29,6 @@ class movieAdapater(private val movieList:ArrayList<ItemView>)
         val itemView=LayoutInflater.from(parent.context).inflate(R.layout.list_item,parent,false);
 
         return MyViewHolder(itemView,onlistener);
-
     }
 
     override fun onBindViewHolder(holder:MyViewHolder, position: Int)
@@ -58,7 +57,7 @@ class movieAdapater(private val movieList:ArrayList<ItemView>)
 
         init
         {
-            itemView.setOnClickListener {
+            itemView.setOnClickListener{
 
                 listener.onItemClick(adapterPosition);
             }
